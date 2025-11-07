@@ -33,7 +33,7 @@ h2 {
 img {
     width: 100%;
     height: auto;
-    box-shadow: 30px 20px 30px #333;
+    box-shadow: 0 0 30px #333;
 }
 
 section{
@@ -47,9 +47,10 @@ section p {
     margin: 10px;
 }
 
-u1 {
+ul {
     margin: 10px 20px;
 }
+
 footer {
 font-size: .9rem
 }
