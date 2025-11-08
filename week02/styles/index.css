@@ -20,7 +20,15 @@ main {
     width: 400px;
     margin: 0 auto;
 }
+aside {
+    width: 400px;
+    margin: 0 auto;
+}
 
+h2{
+    width: 400px;
+    margin: 0 auto;
+}
 h1 {
     margin: 10px;
     text-align: center;
