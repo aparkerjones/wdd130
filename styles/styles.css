@@ -1,6 +1,7 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
 }
 
 nav{
@@ -28,40 +29,36 @@ header,footer {
 }
 
 main {
-    max-width: 400px;
-    margin: 0 auto;
-}
-aside {
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 5px;
-    background-color: #333;
-    color: #fff;
-}
-
-h2{
-    width: 400px;
-    margin: 0 auto;
-}
-
-h1 {
-    color: #fff;
-    margin: 10px;
-    text-align: center;
+    max-width: 600px;
 }
 
 main img {
-    width: 100%;
+    float: right;
+    width: 45%;
     height: auto;
     box-shadow: 0 0 30px #333;
     border: 5px;
-    padding: 10px
+    padding: 10px;
+}
+main p {
+    margin: 10px;
+    padding: 0;
+    text-align: left;
+    width: 45%;
 }
 
-h2 {
-    border-bottom: 1px solid #222;
+main ul {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+aside {
+    position: relative;
+    left: 500;
+    top: 30;
+    width: 400px;
+    text-align: center;
 }
 
 aside img {
@@ -70,16 +67,26 @@ aside img {
     box-shadow: 0 0 15px #333;
 }
 
+aside h2{
+    position: relative;
+    top: 100px;
+    left: 0px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #0d0d0d;
+    text-align: center;
+}
+
+
 section{
     margin: 20px 0;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 10px;
     background-color: #abe;
     font-size: .9rem;
-}
-p {
-    margin: 10px;
-    padding: 0;
 }
 
 ul {
@@ -91,4 +98,12 @@ footer {
     border-top: 5px 0;
     text-align: center;
     font-size: .9rem;
+}
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #59e68f;
+  color: #9c8f8f;
 }
