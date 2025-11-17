@@ -1,0 +1,174 @@
+:root{
+  --primary-color:#0b6b5a; /* deep teal */
+  --secondary-color:#f6c89f; /* warm sand */
+  --accent1-color:#1f4f4a; /* dark slate */
+  --accent2-color:#e9d8a6; /* soft gold */
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --body-font: "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+  --max-width:840px;
+  --text-color:#083233;
+  --muted:#55686a;
+  --gap:1.25rem;
+  --pad:1rem;
+  --radius:8px;
+  --card:#ffffff;
+  --bg:#f7f7f5;
+}
+
+/* Reset box model */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{height:100%}
+body{
+  font-family:var(--body-font);
+  color:var(--text-color);
+  background:var(--bg);
+  line-height:1.5;
+}
+
+/* Container and page width */
+.container{
+  width:100%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 1rem;
+}
+
+/* Limit width and center header/main/footer (fallback for non-container elements) */
+header, main, footer{
+  width:var(--max-width);
+  margin:0 auto;
+}
+
+/* Headings */
+h1, h2{
+  font-family:var(--heading-font);
+  color:var(--primary-color);
+}
+
+/* Basic spacing for content elements */
+nav, p, section, article{
+  margin:16px;
+  padding:8px;
+}
+
+/* Header */
+.site-header{
+  background:linear-gradient(180deg,#ffffff 0%, #f1f5f4 100%);
+  border-bottom:1px solid #e6eef0;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+  padding:0.75rem 0;
+}
+.logo img{height:44px;display:block}
+.logo{font-weight:700;color:var(--primary-color);text-decoration:none;font-size:1.125rem}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:0.75rem}
+.main-nav ul li{display:inline-block}
+.main-nav a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:6px}
+.main-nav a[aria-current="page"], .main-nav a:hover{background:var(--primary-color);color:#fff}
+
+/* Hero - background + overlay */
+.hero{
+  position:relative;
+  min-height:320px;
+  display:flex;
+  align-items:center;
+  background:linear-gradient(90deg, rgba(11,107,90,0.04), rgba(11,107,90,0.02));
+  padding:0; /* hero spacing handled internally */
+  border-bottom:1px solid rgba(0,0,0,0.03);
+}
+.hero-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  z-index:0;
+  opacity:0.95;
+}
+.hero-inner{
+  position:relative;
+  z-index:1;
+  color:#05282a;
+  padding:2rem 0;
+}
+.hero h1{
+  color:#fff;
+  margin:0 0 1rem 0;
+  font-size:clamp(1.5rem, 3.2vw, 2.25rem);
+  position:absolute;
+  top:20px;
+  width:100%;
+  padding:16px;
+  text-align:center;
+  opacity:0.92;
+  background-color:var(--accent1-color);
+}
+.intro{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  max-width:70ch;
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  width:calc(100% - 40px);
+  max-width:520px;
+  background-color:rgba(255,255,255,0.92);
+  padding:12px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(8,18,18,0.08);
+}
+.client-photo{width:84px;height:84px;border-radius:8px;flex:0 0 auto}
+
+/* Layout and cards */
+.layout{display:grid;grid-template-columns:1fr;gap:1.25rem;padding:1.5rem 0 3rem}
+.primary{background:transparent}
+.primary h2{margin-top:0}
+.secondary{display:flex;flex-direction:column;gap:1rem}
+.card{background:var(--card);padding:var(--pad);border-radius:var(--radius);box-shadow:0 1px 2px rgba(16,24,40,0.03);border:1px solid rgba(15,23,42,0.03)}
+.card h3{margin-top:0}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(0,0,0,0.04);background:#fff;padding:1rem 0}
+.site-footer p{margin:0;color:var(--muted);font-size:0.95rem}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.5rem 0}
+
+/* Social icons */
+.socialmedia{display:flex;gap:0.5rem}
+.socialmedia a{text-decoration:none}
+.socialmedia img{width:36px;height:36px;display:block}
+
+/* Utilities */
+.muted{color:var(--muted)}
+a{color:var(--primary-color)}
+ul{padding-left:1.15rem}
+
+/* Responsive layout for larger screens */
+@media (min-width:800px){
+  .layout{grid-template-columns:2fr 1fr;align-items:start}
+}
+
+@media (min-width:1100px){
+  :root{--max-width:1200px}
+  .header-inner{padding:1rem 0}
+  .hero{padding:3rem 0}
+}
+
+/* Small responsive tweaks */
+@media (max-width:720px){
+  header, main, footer{width:100%;padding:0 12px}
+  .hero .intro{position:relative;width:auto;margin:12px 0}
+  .hero h1{position:relative;top:0;padding:12px}
+  .hero article img{float:none;display:block;width:84px;margin:0 0 12px}
+}
+

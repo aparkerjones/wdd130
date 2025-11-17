@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Rafters on a river with mountains">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#cfeef2" />
+      <stop offset="1" stop-color="#dbeff0" />
+    </linearGradient>
+    <linearGradient id="river" x1="0" x2="1">
+      <stop offset="0" stop-color="#2b7a78" />
+      <stop offset="1" stop-color="#1f6b6a" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#sky)" />
+  <!-- mountains -->
+  <path d="M0 380 L180 220 L360 380 Z" fill="#a7c6c4" />
+  <path d="M300 380 L520 180 L740 380 Z" fill="#9bbfc0" />
+  <path d="M700 380 L920 200 L1140 380 Z" fill="#8fb6b6" />
+  <!-- river -->
+  <path d="M0 460 C200 420, 400 420, 600 460 C800 500, 1000 500, 1400 460 L1400 600 L0 600 Z" fill="url(#river)" />
+  <!-- raft silhouettes -->
+  <g transform="translate(420,420) scale(0.9)" fill="#fff">
+    <ellipse cx="0" cy="16" rx="36" ry="10" fill="#143b3b" />
+    <path d="M-20 12 L-6 -6 L6 -6 L20 12 Z" fill="#efefef" opacity="0.9" />
+  </g>
+</svg>
