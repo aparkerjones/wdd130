@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Smiling client">
-  <circle cx="120" cy="120" r="120" fill="#eaf6f6" />
-  <circle cx="120" cy="92" r="36" fill="#cfeef2" />
-  <path d="M60 180c10-30 40-44 60-44s50 14 60 44" fill="#dbeff0" />
-  <circle cx="106" cy="88" r="4" fill="#143b3b" />
-  <circle cx="134" cy="88" r="4" fill="#143b3b" />
-</svg>
