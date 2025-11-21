@@ -36,6 +36,28 @@ body{
   margin:0 auto;
   padding:0 1rem;
 }
+.figure {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 5px;
+  width: 250px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.figure img{
+  max-width: 250px;
+  max-height: 130px;
+}
+
+.figure figcaption {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
 
 /* Limit width and center header/main/footer */
 header, main, footer{
