@@ -61,12 +61,15 @@ nav, p, section, article{
   border-bottom:1px solid #e6eef0;
 }
 .header-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:var(--gap);
-  padding:0.75rem 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--gap);
+  padding: 0.75rem 0;
 }
+.header-inner .logo{justify-self: start}
+.header-inner .main-nav{justify-self: center}
+.header-inner .socialmedia{justify-self: end}
 .logo img{height:44px;display:block}
 .logo{font-weight:700;color:var(--primary-color);text-decoration:none;font-size:1.125rem}
 .main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:0.75rem}
@@ -99,42 +102,57 @@ nav, p, section, article{
   z-index:1;
   color:#05282a;
   padding:2rem 0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:1rem;
 }
 .hero article{
-  position:absolute;
-  bottom:0;
-  left:20px;
+  position:static;
   z-index:2;
-  width:calc(100% - 40px);
-  max-width:520px;
-  /* restored: let the article size to its content (no max-height/scrolling) */
-  height: auto;
+  width:100%;
+  max-width:760px;
+  height:auto;
+  background-color: rgba(255,255,255,0.95);
+  border:1px solid rgba(0,0,0,0.06);
+  padding:1rem 1.25rem;
+  box-shadow: 0 3px 8px rgba(8,18,18,0.06);
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
 }
 .hero h1{
   color:#fff;
-  margin:0 0 1rem 0;
+  margin:0;
   font-size:clamp(1.5rem, 3.2vw, 2.25rem);
   position:absolute;
-  top:20px;
-  width:100%;
-  padding:16px;
+  top:8%;
+  left:50%;
+  transform:translateX(-50%);
+  padding:8px 16px;
   text-align:center;
   opacity:0.92;
   background: linear-gradient(90deg, var(--accent1-color), var(--accent2-color));
+  z-index:2;
 }
 .intro{
+  /* horizontal content box: text left, image right */
   display:flex;
   gap:1rem;
   align-items:center;
-  background-color:rgba(255,255,255,0.92);
-  border-left:6px solid var(--secondary-color);
-  padding:5px;
-  border-radius:var(--radius);
-  box-shadow:0 3px 9px rgba(8,18,18,0.08);
 }
-.client-photo{width:100px;height:100px;border-radius:8px;flex:0 0 auto}
+.client-photo{width:100px;height:100px;border-radius:8px;flex:0 0 auto;order:2}
+.intro p{flex:1;margin:0}
 
-/* Layout and cards */
+/* responsive: stack on small screens */
+@media (max-width:720px){
+  .hero-inner{padding:1rem 0}
+  .hero article{flex-direction:column;align-items:flex-start}
+  .client-photo{order:1;margin:0 0 0.5rem 0;width:72px;height:72px}
+}
+
 .layout{display:grid;grid-template-columns:1fr;gap:1.25rem;padding:1.5rem 0 3rem}
 .primary{background:transparent}
 .primary h2{margin-top:0}
@@ -152,7 +170,6 @@ nav, p, section, article{
 .socialmedia a{text-decoration:none}
 .socialmedia img{width:36px;height:36px;display:block}
 
-/* Utilities */
 .muted{color:var(--muted)}
 a{color:var(--primary-color)}
 ul{padding-left:1.15rem}
@@ -168,7 +185,6 @@ ul{padding-left:1.15rem}
   .hero{padding:3rem 0}
 }
 
-/* Small responsive tweaks */
 @media (max-width:720px){
   header, main, footer{width:100%;padding:0 12px}
   .hero h1{position:absolute;top:12px;left:12px;right:12px;padding:12px;font-size:clamp(1.25rem,4vw,1.75rem)}
