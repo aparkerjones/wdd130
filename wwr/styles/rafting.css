@@ -6,7 +6,6 @@
 
 :root{
   --primary-color:#0b6b5a;
-  --secondary-color:#f6c89f;
   --accent1-color:#1f4f4a;
   --accent2-color:#e9d8a6;
   --heading-font: "Georgia", "Times New Roman", serif;
@@ -171,7 +170,7 @@ nav, p, section, article{
 /* responsive: stack on small screens */
 @media (max-width:720px){
   .hero-inner{padding:1rem 0}
-  .hero article{flex-direction:column;align-items:flex-start}
+  .hero article{position: absolute}
   .client-photo{order:1;margin:0 0 0.5rem 0;width:72px;height:72px}
 }
 
