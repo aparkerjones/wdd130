@@ -129,7 +129,7 @@ nav, p, section, article{
   gap:1rem;
 }
 .hero article{
-  position:static;
+  position:absolute;
   z-index:2;
   width:100%;
   max-width:760px;
