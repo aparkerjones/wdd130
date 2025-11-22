@@ -241,7 +241,7 @@ ul{padding-left:1.15rem}
 
 .contact-form button {
     background-color: #0b6b5a;
-    color: white;
+    color: #ffffff;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -286,4 +286,43 @@ ul{padding-left:1.15rem}
 .contact-form label input[type="checkbox"] {
     margin-right: 8px;
     accent-color: #0b6b5a;
+}
+
+.employee-profiles {
+    border: 2px solid #888;
+    border-radius: 6px;
+    padding: 18px 10px 24px 10px;
+    margin: 24px auto;
+    max-width: 900px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.employee-profiles h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    justify-items: center;
+    align-items: start;
+}
+
+.profiles-grid figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.profiles-grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background: #e0e0e0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
