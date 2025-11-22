@@ -1,103 +1,103 @@
 <!doctype html>
 
-<body lang="en">
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact Us and the rafting company name</title>
-        <meta name="description"
-            content="WWR Rafting Company — guided white-water rafting adventures, safety-first instruction, and unforgettable river experiences for all skill levels.">
-        <meta name="author" content="Parker Jones">
-        <link rel="stylesheet" href="styles/rafting.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us and the rafting company name</title>
+    <meta name="description"
+        content="WWR Rafting Company — guided white-water rafting adventures, safety-first instruction, and unforgettable river experiences for all skill levels.">
+    <meta name="author" content="Parker Jones">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
 
-    <body>
-        <header class="site-header">
-            <div class="container header-inner">
-                <a class="logo" href="index.html">
-                    <img src="images/logo.png" alt="WWR logo">
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="WWR logo">
+            </a>
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h1>WWR Rafting Company</h1>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="yourname">Your Name:</label>
+                <input type="text" id="yourname" name="yourname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of the Message:</legend>
+                    <label><input type="radio" id="general" name="purpose" value="General Inquiry" required> General
+                        Inquiry</label><br>
+                    <label><input type="radio" id="question" name="purpose" value="Reservation Question">
+                        Reservation
+                        Question</label><br>
+                    <label><input type="radio" id="suggestion" name="purpose" value="Website Suggestion"> Website
+                        Suggestion</label>
+                </fieldset>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <label><input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                    Please subscribe me to the monthly newsletter
+                </label>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="employee-profiles">
+            <h2>We Are Here to Serve You</h2>
+            <div class="profiles-grid">
+                <figure>
+                    <img src="images/employee1.jpeg" alt="Employee Profile">
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpeg" alt="Employee Profile">
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpeg" alt="Employee Profile">
+                </figure>
+            </div>
+        </section>
+        <section class=" company-info">
+            <h2>Our Contact Information</h2>
+            <p><strong>Phone:</strong> 999-555-1234</p>
+            <p><strong>Email:</strong> info@wwrrafting.com</p>
+            <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
+        </section>
+        <section class="map">
+            <h2>Find Us Here</h2>
+            images/rafting-map.png
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2025</span> WWR Rafting Company - Parker Jones</p>
+            <nav class="socialmedia" aria-label="Social media links">
+                <a href="https://facebook.com" target="_blank" rel="noopener">
+                    <img src="images/facebook.png" alt="Facebook">
                 </a>
-                <nav class="main-nav" aria-label="Primary">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="trips.html">Trips</a></li>
-                        <li><a href="contact.html" aria-current="page">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section class="contact-form">
-                <h1>WWR Rafting Company</h1>
-                <h2>Contact Us</h2>
-                <form>
-                    <label for="yourname">Your Name:</label>
-                    <input type="text" id="yourname" name="yourname" required>
+                <a href="https://linkedin.com" target="_blank" rel="noopener">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <fieldset>
-                        <legend>Purpose of the Message:</legend>
-                        <label><input type="radio" id="general" name="purpose" value="General Inquiry" required> General
-                            Inquiry</label><br>
-                        <label><input type="radio" id="question" name="purpose" value="Reservation Question">
-                            Reservation
-                            Question</label><br>
-                        <label><input type="radio" id="suggestion" name="purpose" value="Website Suggestion"> Website
-                            Suggestion</label>
-                    </fieldset>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    <label><input type="checkbox" id="subscribe" name="subscribe" value="yes">
-                        Please subscribe me to the monthly newsletter
-                    </label>
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
-            <section class="employee-profiles">
-                <h2>We Are Here to Serve You</h2>
-                <div class="profiles-grid">
-                    <figure>
-                        <img src="images/employee1.jpeg" alt="Employee Profile">
-                    </figure>
-                    <figure>
-                        <img src="images/employee2.jpeg" alt="Employee Profile">
-                    </figure>
-                    <figure>
-                        <img src="images/employee3.jpeg" alt="Employee Profile">
-                    </figure>
-                </div>
-            </section>
-            <section class=" company-info">
-                <h2>Our Contact Information</h2>
-                <p><strong>Phone:</strong> 999-555-1234</p>
-                <p><strong>Email:</strong> info@wwrrafting.com</p>
-                <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
-            </section>
-            <section class="map">
-                <h2>Find Us Here</h2>
-                images/rafting-map.png
-            </section>
-        </main>
-        <footer>
-            <div class="container footer-inner">
-                <p>&copy; <span id="year">2025</span> WWR Rafting Company - Parker Jones</p>
-                <nav class="socialmedia" aria-label="Social media links">
-                    <a href="https://facebook.com" target="_blank" rel="noopener">
-                        <img src="images/facebook.png" alt="Facebook">
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener">
-                        <img src="images/linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener">
-                        <img src="images/instagram.png" alt="Instagram">
-                    </a>
-                </nav>
-            </div>
-        </footer>
-    </body>
-
-    </html>
+</html>
