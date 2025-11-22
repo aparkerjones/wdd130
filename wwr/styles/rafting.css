@@ -212,3 +212,55 @@ ul{padding-left:1.15rem}
   .hero article img{float:right;display:block;width:72px;height:72px;margin:0 0 0 12px}
 }
 
+/* Contact Page Styles */
+.contact-form, .company-info, .map {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contact-form h2, .company-info h2, .map h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #0b6b5a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1f4f4a;
+}
+
+.company-info p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.map img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
