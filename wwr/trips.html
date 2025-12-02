@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trips Page</title>
+    <meta name="description"
+        content="WWR Rafting Company — guided white-water rafting adventures, safety-first instruction, and unforgettable river experiences for all skill levels.">
+    <meta name="author" content="Parker Jones">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="WWR logo">
+            </a>
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html" aria-current="page">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="trips-columns">
+            <section class="trip-card">
+                <h2>Snake River Adventure</h2>
+                <div>
+                    <img src="images/whitewater.jpg" alt="hardcore trip whitewater">
+                    <p>
+                        Experience the thrill of Class III-IV rapids on the legendary Snake River. This full-day
+                        adventure
+                        includes
+                        lunch, professional guides, and breathtaking canyon scenery. Perfect for adrenaline seekers and
+                        nature
+                        lovers!
+                    </p>
+                    <img src="images/waterfall.jpg" alt="hardcore trip waterfall">
+                </div>
+
+            </section>
+            <section class="trip-card">
+                <h2>Sunset Rapids Run</h2>
+                <div>
+                    <img src="images/sunset-rapids.jpg" alt="sunset rapids">
+                    <p>
+                        Paddle into the golden hour with our evening Sunset Rapids Run. Includes snacks, a riverside
+                        campfire, and
+                        unforgettable views as the sun sets over the water. Ideal for couples and groups.
+                    </p>
+                    <img src="images/sunset-rapids2.jpg" alt="solo sunset img">
+                </div>
+            </section>
+            <section class="trip-card">
+                <h2>Family Float Trip</h2>
+                <div>
+                    <img src="images/family-float.jpg" alt="family float trip">
+                    <p>
+                        Enjoy a gentle, scenic float suitable for all ages. Our Family Float Trip features calm waters,
+                        wildlife
+                        viewing, and plenty of splashy fun. Great for kids, grandparents, and first-time rafters.
+                    </p>
+                    <img src="images/gentle-river.jpg" alt="gentle float">
+                </div>
+
+            </section>
+
+        </section>
+        <section class="card">
+            <h2>All Available Trips</h2>
+            <div style="overflow-x:auto;">
+                <table class="trips-table">
+                    <thead>
+                        <tr style="background-color:#1f4f4a; color:#fff;">
+                            <th>Trip Name</th>
+                            <th>Difficulty</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                            <th>Season</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Family Float Trip</td>
+                            <td>I-II</td>
+                            <td>Half Day</td>
+                            <td>$75</td>
+                            <td>June - August</td>
+                        </tr>
+                        <tr>
+                            <td>Sunset Rapids Run</td>
+                            <td>II-III</td>
+                            <td>Evening</td>
+                            <td>$90</td>
+                            <td>June - September</td>
+                        </tr>
+                        <tr>
+                            <td>Snake River Adventure</td>
+                            <td>III-IV</td>
+                            <td>Full Day</td>
+                            <td>$120</td>
+                            <td>May - September</td>
+                        </tr>
+                        <tr>
+                            <td>Hard Core Rafting</td>
+                            <td>IV-V</td>
+                            <td>Full Day</td>
+                            <td>$200</td>
+                            <td>May - September</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="container">
+            <h2>Questions?</h2>
+            <p class="main-nav a">
+                <a href="contact.html">Contact Us Today!</a>
+            </p>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2025</span> WWR Rafting Company - Parker Jones</p>
+
+            <nav class="socialmedia" aria-label="Social media links">
+                <a href="https://facebook.com" target="_blank" rel="noopener">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
