@@ -89,6 +89,7 @@ nav, p, section, article{
 .site-header{
   background:linear-gradient(180deg,#ffffff 0%, #f1f5f4 100%);
   border-bottom:1px solid #e6eef0;
+  border-radius: 10px;
 }
 .header-inner{
   display: grid;
@@ -116,6 +117,7 @@ nav, p, section, article{
   background:linear-gradient(90deg, #0b6b5a0a, #0b6b5a05);
   padding:0; /* hero spacing handled internally */
   border-bottom:1px solid #000000;
+  border-radius: 8px;
 }
 .hero-bg{
   position:absolute;
@@ -126,6 +128,7 @@ nav, p, section, article{
   display:block;
   z-index:0;
   opacity:0.95;
+  border-radius: 8px;
 
 }
 .hero-inner{
@@ -210,14 +213,14 @@ nav, p, section, article{
 .card h3{margin-top:0}
 
 /* Footer */
-.site-footer{border-top:1px solid #0000000a;background:#fff;padding:1rem 0}
-.site-footer p{margin:0;color:var(--muted);font-size:0.95rem}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.5rem 0}
+.site-footer{border-top:1px solid #0000000a;background:#fff;padding:1rem 0; border-radius: 10px;}
+.site-footer p{margin:0;color:var(--muted);font-size:0.95rem; border-radius: 8px;}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.5rem 0;}
 
 /* Social icons */
 .socialmedia{display:flex;gap:0.5rem}
 .socialmedia a{text-decoration:none}
-.socialmedia img{width:36px;height:36px;display:block}
+.socialmedia img{width:36px;height:36px;display:block;border-radius: 8px;}
 
 .muted{color:var(--muted)}
 a{color:var(--primary-color)}
@@ -239,7 +242,7 @@ ul{padding-left:1.15rem}
 @media (max-width:720px){
   header, main, footer{
     width:100%;
-    padding:0 12px
+    padding:0 12px;
   }
   .hero h1{position:absolute;
     top:12px;left:12px;
@@ -250,7 +253,7 @@ ul{padding-left:1.15rem}
     display:block;
     width:72px;
     height:72px;
-    margin:0 0 0 12px
+    margin:0 0 0 12px;
   }
 }
 
@@ -264,7 +267,6 @@ ul{padding-left:1.15rem}
 }
 
 .contact-form2{
-  max-width: 1150px auto;
     padding: 15px;
     background-color: #49b9a4a2;
     border-radius: 8px;
